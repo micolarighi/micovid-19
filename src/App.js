@@ -42,14 +42,14 @@ class App extends React.Component {
         </Grid>
         <CountryPicker handleCountryChange={this.handleCountryChange} />
         <Grid container justifyContent={"center"} spacing={5} >
-          <Grid item xs={12} md={5} className={styles.cardGrid}>
+          <Grid item xs={12} md={4} className={styles.cardGrid}>
             <Cards data={data} />
           </Grid>
-          <Grid item xs={12} md={6} className={styles.cardGrid}>
+          <Grid item xs={12} md={7} className={styles.cardGrid}>
             <Chart data={data} country={country} />
           </Grid>
         </Grid>
-        <Grid container justifyContent={"center"} marginTop={10}>
+        <Grid container justifyContent={"center"} marginTop={10} marginBottom={12}>
           <About />
         </Grid>
         <Footer />

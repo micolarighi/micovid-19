@@ -31,7 +31,7 @@ class App extends React.Component {
 
     return (
       <div className={styles.container}>
-        <Grid marginBottom={6} columnSpacing={10} container justifyContent={"center"} alignItems={"center"}>
+        <Grid marginBottom={4} columnSpacing={10} container justifyContent={"center"} alignItems={"center"}>
           <Grid item >
             <img width={420} className={styles.image} src={image} alt="COVID-19" />
             <h3>A Covid-19 Tracker created by <strong>Micola Arighi</strong></h3>

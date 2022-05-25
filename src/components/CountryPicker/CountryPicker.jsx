@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { NativeSelect, FormControl } from '@mui/material';
+import { NativeSelect, FormControl, Typography } from '@mui/material';
 
 import { fetchCountries } from '../../api';
 
@@ -18,6 +18,9 @@ const Countries = ({ handleCountryChange }) => {
 
   return (
     <FormControl className={styles.formControl}>
+      <Typography variant="h5" color="textSecondary">
+        Select A Country
+      </Typography>
       <NativeSelect className={styles.nativeSelect} defaultValue="" onChange={(e) => handleCountryChange(e.target.value)}>
         <optgroup>
           <option value="">United States</option>
